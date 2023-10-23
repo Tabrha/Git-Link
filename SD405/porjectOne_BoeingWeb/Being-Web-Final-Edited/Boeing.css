@@ -1,0 +1,68 @@
+#image1 {
+    
+    left: 0;
+}
+#image2 {
+   
+    right: 0;
+}
+/* .flight{
+    margin-top: 40%;
+} */
+
+/* Define animation properties */
+.animated-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+/* Define animation keyframes */
+@keyframes moveLeft {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 200%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        left: 200%;
+    }
+    
+}
+
+
+/* @keyframes moveRight {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 200%;
+    }
+    0% {
+        top: 200px;
+    }
+    100% {
+       top: 50%;
+    } 
+
+}*/
+
+/* Apply animations to the images */
+#image1 {
+    
+    animation-name: moveLeft;
+}
+#image2 {
+    animation-name: moveRight;
+   
+}
+/* .flight{
+    margin-top: 40%;
+} */
